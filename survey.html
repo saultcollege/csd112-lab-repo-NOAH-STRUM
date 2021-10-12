@@ -33,9 +33,57 @@
       </header>
       <main>
         <h1>Survey</h1>
-        <form name="lab_4_form" method="post">
-          <label for="users_name" id="Users_name">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
+        <form name="lab_4_form" method="post" action="https://formspree.io/f/mqkwjvjn">
+        <p>
+          <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
           <input id="name_field" type="text" name="name_field" required>
+        </p>
+        <p>
+          <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
+          <input id="" type="email" name="email_field">
+        </p>
+        <p>
+          <label for="best_whole_number">Which whole number is the best?</label>
+          <input id="best_whole_number" type="number" name="best_whole_number" min="0">
+        </p>
+        <p>
+          <label for="best_day">Which day is best?</label>
+          <input id="best_day" type="date" name="best_day">
+        </p>
+        <p>
+          <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
+          <select name="best_bear" id="best_bear">
+            <option value="blank" selected></option>
+            <option value="black">Black</option>
+            <option value="brown">Brown</option>
+            <option value="care">Care</option>
+            <option value="panda">Panda</option>
+            <option value="polar">Polar</option>
+            <option value="teddy">Teddy</option>
+          </select>
+        </p>
+        <fieldset>
+          <legend>Do you like radio buttons?</legend>
+          <ul></ul>
+            <li>
+              <label for="yes">Yes</label>
+              <input type="radio" name="radio_buttons" value="yes">
+            </li>
+            <li>
+              <label for="no">No</label>
+              <input type="radio" name="radio_buttons" value="no">
+            </li>
+            <li>
+              <label for="?">None of your business</label>
+              <input type="radio" name="radio_buttons" value="?" checked>
+            </li>
+          </ul>
+        </fieldset>
+        <p>
+          <label for="life_meaning">What is the meaning of life?</label>
+          <textarea name="life_meaning" id="life_meaning" cols="50" rows="5" placeholder="Enter the correct answer here"></textarea>
+        </p>
+        <button type="submit">Send</button>
         </form>
       </main>
       <footer>
