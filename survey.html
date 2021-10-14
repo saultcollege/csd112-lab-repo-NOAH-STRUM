@@ -33,57 +33,82 @@
       </header>
       <main>
         <h1>Survey</h1>
-        <form name="lab_4_form" method="post" action="https://formspree.io/f/mqkwjvjn">
-        <p>
-          <label for="name_field">What is your name? <abbr title="required" aria-label="required">*</abbr></label>
-          <input id="name_field" type="text" name="name_field" required>
-        </p>
-        <p>
-          <label for="email_field">What is your email? <abbr title="required" aria-label="required">*</abbr></label>
-          <input id="" type="email" name="email_field">
-        </p>
-        <p>
-          <label for="best_whole_number">Which whole number is the best?</label>
-          <input id="best_whole_number" type="number" name="best_whole_number" min="0">
-        </p>
-        <p>
-          <label for="best_day">Which day is best?</label>
-          <input id="best_day" type="date" name="best_day">
-        </p>
-        <p>
-          <label for="best_bear">Which bear is best? <abbr title="required" aria-label="required">*</abbr></label>
-          <select name="best_bear" id="best_bear">
-            <option value="blank" selected></option>
-            <option value="black">Black</option>
-            <option value="brown">Brown</option>
-            <option value="care">Care</option>
-            <option value="panda">Panda</option>
-            <option value="polar">Polar</option>
-            <option value="teddy">Teddy</option>
-          </select>
-        </p>
-        <fieldset>
-          <legend>Do you like radio buttons?</legend>
-          <ul></ul>
-            <li>
-              <label for="yes">Yes</label>
-              <input type="radio" name="radio_buttons" value="yes">
-            </li>
-            <li>
-              <label for="no">No</label>
-              <input type="radio" name="radio_buttons" value="no">
-            </li>
-            <li>
-              <label for="?">None of your business</label>
-              <input type="radio" name="radio_buttons" value="?" checked>
-            </li>
-          </ul>
-        </fieldset>
-        <p>
-          <label for="life_meaning">What is the meaning of life?</label>
-          <textarea name="life_meaning" id="life_meaning" cols="50" rows="5" placeholder="Enter the correct answer here"></textarea>
-        </p>
-        <button type="submit">Send</button>
+        <form
+          name="lab_4_form"
+          method="post"
+          action="https://formspree.io/f/mqkwjvjn">
+          <p>
+            <label for="name_field"
+              >What is your name?
+              <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="name_field" type="text" name="name_field" required />
+          </p>
+          <p>
+            <label for="email_field"
+              >What is your email?
+              <abbr title="required" aria-label="required">*</abbr></label>
+            <input id="email_field" type="email" name="email_field" />
+          </p>
+          <p>
+            <label for="best_whole_number"
+              >Which whole number is the best?</label>
+            <input
+              id="best_whole_number"
+              type="number"
+              name="best_whole_number"
+              min="0"/>
+          </p>
+          <p>
+            <label for="best_day">Which day is best?</label>
+            <input id="best_day" type="date" name="best_day" />
+          </p>
+          <p>
+            <label for="best_bear"
+              >Which bear is best?
+              <abbr title="required" aria-label="required">*</abbr></label>
+            <select name="best_bear" id="best_bear">
+              <option value="blank" selected>&nbsp;</option>
+              <option value="black">Black</option>
+              <option value="brown">Brown</option>
+              <option value="care">Care</option>
+              <option value="panda">Panda</option>
+              <option value="polar">Polar</option>
+              <option value="teddy">Teddy</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Do you like radio buttons?</legend>
+            <ul>
+              <li>
+                <label for="yes">Yes</label>
+                <input type="radio" name="radio_buttons" value="yes" id="yes" />
+              </li>
+              <li>
+                <label for="no">No</label>
+                <input type="radio" name="radio_buttons" value="no" id="no" />
+              </li>
+              <li>
+                <label for="?">None of your business</label>
+                <input
+                  type="radio"
+                  name="radio_buttons"
+                  value="?"
+                  id="?"
+                  checked/>
+              </li>
+            </ul>
+          </fieldset>
+          <p>
+            <label for="life_meaning">What is the meaning of life?</label>
+            <textarea
+              name="life_meaning"
+              id="life_meaning"
+              cols="50"
+              rows="5"
+              placeholder="Enter the correct answer here">
+            </textarea>
+          </p>
+          <button type="submit">Send</button>
         </form>
       </main>
       <footer>
@@ -95,8 +120,10 @@
         </blockquote>
         <p>
           &#169; 2020
-          <a href="mailto:21027619@saultcollege.ca?subject=Message%20from%20CSD120%20Website">
-            Noah Strum</a>
+          <a
+            href="mailto:21027619@saultcollege.ca?subject=Message%20from%20CSD120%20Website">
+            Noah Strum
+          </a>
         </p>
         <picture>
           <source type="image/svg+xml" srcset="images/sc-logo.svg" />
@@ -106,7 +133,7 @@
             srcset="
               images/sc-logo.png,
               images/sc-logo@1.5x 1.5x,
-              images/sc-logo@2x 2x"
+              images/sc-logo@2x   2x"
             width="70"/>
         </picture>
       </footer>
