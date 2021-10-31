@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+dt ::after {
+    content: ":";
+}
+
+
+
+.width-wrap {
+    max-width: 960px;
+    margin: auto;
+    padding: 0 2em 2em 2em;
+    margin-bottom: 3em;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    
+}
+
+footer hr {
+    width: 50%;
+    min-width: 300px;
+    max-width: 890;
+    margin: 3em 0 2em 0;
+    border: none;
+    border-bottom: 3px dotted;
+    color: rgb(0, 0, 255);
+}
+
+
+dt ::after {
+    content: ":";
+}
