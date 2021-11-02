@@ -1,18 +1,66 @@
 * {
     box-sizing: border-box;
 }
+
 *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
+
 dt ::after {
     content: ":";
 }
 
+h1 {
+    color: rgb(102, 252, 241)
+}
+    
+h2 {
+    color: rgb(102, 252, 241)
+}
+    
+h3{
+    color: rgb(102, 252, 241)
+}
+    
+header {
+    border-top: 4px solid rgba(0, 0, 0, 0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+    
+header nav ul {
+    margin: 0;
+    padding: 0;
+}
+    
+header li {
+    display: inline; 
+}
+    
+header a {
+    display: inline-block; 
+    color: rgb(69, 162, 158);
+    margin-left: 1em;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+    
+header a:hover {
+    border-top: 4px solid;
+    margin-top: -1em;
+}
+    
+header nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
 body {
-    background-color: rgb(240, 240, 240);
-    color: rgb(2, 74, 161);
+    background-color: rgb(11, 12, 16);
+    color: rgb(197, 198, 199);
 }
 
 
@@ -24,7 +72,7 @@ body {
     border-left: 1px solid rgba(0, 0, 0, 0.3);
     border-right: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    background-color: rgb(196, 196, 196);
+    background-color: rgb(31, 40, 51);
 }
 
 footer hr {
@@ -34,63 +82,50 @@ footer hr {
     margin: 3em 0 2em 0;
     border: none;
     border-bottom: 3px dotted;
-    color: rgb(0, 0, 255);
-}
-
-dt::after{
-    content: ":";
-}
-
-h1 {
-color: rgb(51, 196, 209);
-}
-
-h2 {
-    color: rgb(51, 196, 209);
-}
-
-h3{
-    color: rgb(51, 196, 209);
-}
-
-a {
-    color: rgb(253, 236, 0);
-}
-
-header {
-    border-top: 4px solid rgba(0, 0, 0, 0.1);
-    margin-left: -2em;
-    margin-right: -2em;
-}
-
-header nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-header li {
-    display: inline; 
-}
-
-header a {
-    display: inline; 
-    color: rgb(0, 0, 0);
-    padding-top: 1em;
-    margin-left: 1em;
-}
-
-header a:hover {
-    border-top: 5px solid;
+    color: rgb(102, 252, 241);
 }
 
 ::selection{
     background-color: rgb(0, 225, 255);
 }
 
-header nav {
-    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
-    margin-left: 2em;
-    margin-right: 2em;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
+dt::after{
+    content: ":";
+}
+
+a {
+    color: rgb(180, 2, 58);
+}
+
+table {
+    padding: 0.3, 1, 0.3, 1;
+}
+
+thead, 
+tfoot,
+tbody th {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+label {
+    display: block;
+ }
+
+input[name="radio"] + label {
+    display: inline;
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 1em, 3em, 1em, 3em;
+    color: rgb(87, 66, 207);
+    background-color: rgb(29, 29, 29);
 }
