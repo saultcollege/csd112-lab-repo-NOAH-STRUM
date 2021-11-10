@@ -1,4 +1,4 @@
-* {
+html {
     box-sizing: border-box;
 }
 
@@ -43,13 +43,15 @@ header a {
     display: inline-block; 
     color: rgb(69, 162, 158);
     margin-left: 1em;
+    margin-right: 1em;
     padding-bottom: 0.5em;
     padding-top: 1em;
+    border-top: 4px solid transparent;
+    margin-top: -4px;
 }
     
 header a:hover {
-    border-top: 4px solid;
-    margin-top: -1em;
+    border-top: 4px solid rgb(69, 162, 158);
 }
     
 header nav {
@@ -76,9 +78,9 @@ body {
 }
 
 footer hr {
-    width: 50%;
+    width: 50vw;
     min-width: 300px;
-    max-width: 890;
+    max-width: 890px;
     margin: 3em 0 2em 0;
     border: none;
     border-bottom: 3px dotted;
@@ -97,13 +99,13 @@ a {
     color: rgb(180, 2, 58);
 }
 
-table {
-    padding: 0.3, 1, 0.3, 1;
+table td {
+    padding: 0.3em 1em 0.3em 1em;
 }
 
-thead, 
-tfoot,
-tbody th {
+thead td, 
+tfoot td,
+th {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -111,7 +113,7 @@ td {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-tbody tr:nth-child(even) {
+tbody tr:nth-child(even) td {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
@@ -119,13 +121,17 @@ label {
     display: block;
  }
 
-input[name="radio"] + label {
+input[type="radio"] + label, input[type="checkbox"] + label {
     display: inline;
 }
 
-button[type="submit"] {
+[type="submit"] {
     border: none;
-    padding: 1em, 3em, 1em, 3em;
+    padding: 1em 3em 1em 3em;
     color: rgb(87, 66, 207);
     background-color: rgb(29, 29, 29);
+}
+
+form :invalid {
+    background-color: #ff000080;
 }
