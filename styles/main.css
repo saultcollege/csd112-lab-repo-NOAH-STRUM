@@ -19,8 +19,13 @@ dt ::after {
 }
 
 h1 {
-    color: rgb(102, 252, 241)
+    background: rgb(36,0,0);
+    background: linear-gradient(0deg, rgba(36,0,0,1) 0%, rgba(29,9,121,1) 0%, rgba(0,212,255,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 0);
 }
+
     
 h2 {
     color: rgb(102, 252, 241)
@@ -58,10 +63,14 @@ header a {
     padding-top: 1em;
     border-top: 4px solid transparent;
     margin-top: -4px;
+
+    font-weight: bold;
+    text-transform: uppercase;
 }
     
 header a:hover {
     border-top: 4px solid rgb(69, 162, 158);
+    text-decoration: none;
 }
     
 header nav {
@@ -106,6 +115,7 @@ a {
 a:hover{
     text-decoration: underline;
 }
+
 
 table td {
     padding: 0.3em 1em 0.3em 1em;
@@ -159,4 +169,26 @@ fieldset ul{
     padding: 0;
     list-style-type: none;
     
+}
+
+.bio {
+    column-count: 3;
+    column-gap: 2em;
+}
+
+div.bio table {
+    column-span: all;
+    margin-top: 1em;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+img {
+    max-width: 100%;
+}
+
+.my-dog-walking {
+    padding: 2%;
+    background-color: white;
+    box-shadow: 5px 5px rgb(38, 0, 255) ;
 }
