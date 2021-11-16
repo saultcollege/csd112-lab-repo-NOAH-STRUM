@@ -1,11 +1,15 @@
 html {
   box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
 }
 body {
   font-family: "Quicksand", Georgia, serif;
@@ -181,6 +185,8 @@ fieldset ul {
 .bio {
   column-count: 3;
   column-gap: 2em;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 2em;
 }
 
 div.bio table {
@@ -188,6 +194,7 @@ div.bio table {
   margin-top: 1em;
   border-collapse: collapse;
   caption-side: bottom;
+  -webkit-column-span: all;
 }
 
 img {
@@ -209,4 +216,3 @@ footer {
   text-shadow: 2px 2px 0 rgb(255, 255, 255);
   text-decoration: none;
 }
-
