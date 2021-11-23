@@ -79,6 +79,7 @@ header a {
 
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 4px;
 }
 
 header a:hover {
