@@ -51,92 +51,54 @@
         </nav>
       </header>
       <main>
-        <h1>Survey</h1>
-        <form
-          name="lab_4_form"
-          method="post"
-          action="https://formspree.io/f/mqkwjvjn"
-        >
-          <p>
-            <label for="name_field"
-              >What is your name?
-              <abbr title="required" aria-label="required">*</abbr></label
-            >
-            <input id="name_field" type="text" name="name_field" required />
-          </p>
-          <p>
-            <label for="email_field"
-              >What is your email?
-              <abbr title="required" aria-label="required">*</abbr></label
-            >
-            <input id="email_field" type="email" name="email_field" required />
-          </p>
-          <p>
-            <label for="best_whole_number"
-              >Which whole number is the best?</label
-            >
-            <input
-              id="best_whole_number"
-              type="number"
-              name="best_whole_number"
-              min="1"
-            />
-          </p>
-          <p>
-            <label for="best_day">Which day is best?</label>
-            <input id="best_day" type="date" name="best_day" />
-          </p>
-          <p>
-            <label for="best_bear"
-              >Which bear is best?
-              <abbr title="required" aria-label="required">*</abbr></label
-            >
-            <select name="best_bear" id="best_bear" required>
-              <option value="" selected>&nbsp;</option>
-              <option value="black">Black</option>
-              <option value="brown">Brown</option>
-              <option value="care">Care</option>
-              <option value="panda">Panda</option>
-              <option value="polar">Polar</option>
-              <option value="teddy">Teddy</option>
-            </select>
-          </p>
-          <fieldset>
-            <legend>Do you like radio buttons?</legend>
-            <ul>
-              <li>
-                <input type="radio" name="radio_buttons" value="yes" id="yes" />
-                <label for="yes">Yes</label>
-              </li>
-              <li>
-                <input type="radio" name="radio_buttons" value="no" id="no" />
-                <label for="no">No</label>
-              </li>
-              <li>
-                <input
-                  type="radio"
-                  name="radio_buttons"
-                  value="?"
-                  id="?"
-                  checked
-                />
-                <label for="?">None of your business</label>
-              </li>
-            </ul>
-          </fieldset>
-          <p>
-            <label for="life_meaning">What is the meaning of life?</label>
-            <textarea
-              name="life_meaning"
-              d="life_meaning"
-              cols="50"
-              rows="5"
-              placeholder="Enter the correct answer here"
-            >
-            </textarea>
-          </p>
-          <p><button type="submit">Send</button></p>
-        </form>
+        <h1>Gallery</h1>
+        <div class="gallery">
+          <a href="https://loremflickr.com1024/1024?lock=50" class="row-span-2">
+            <img src="https://loremflickr.com/300/600?lock=50" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=1">
+            <img src="https://loremflickr.com/300/300?lock=1" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=2">
+            <img src="https://loremflickr.com/300/300?lock=2" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=3">
+            <img src="https://loremflickr.com/300/300?lock=3" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=4">
+            <img src="https://loremflickr.com/300/300?lock=4" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=5">
+            <img src="https://loremflickr.com/300/300?lock=5" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=6">
+            <img src="https://loremflickr.com/300/300?lock=6" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=7">
+            <img src="https://loremflickr.com/300/300?lock=7" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=8">
+            <img src="https://loremflickr.com/300/300?lock=8" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=9">
+            <img src="https://loremflickr.com/300/300?lock=9" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=10">
+            <img src="https://loremflickr.com/300/300?lock=10" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=11"class="row-span-2 col-span-2">
+            <img src="https://loremflickr.com/600/600?lock=12" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=12">
+            <img src="https://loremflickr.com/300/300?lock=12" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=13">
+            <img src="https://loremflickr.com/300/300?lock=13" />
+          </a>
+          <a href="https://loremflickr.com/1024/1024/?lock=14">
+            <img src="https://loremflickr.com/300/300?lock=14" />
+          </a>
+        </div>
       </main>
       <footer>
         <hr />
@@ -151,8 +113,8 @@
           <a
             href="mailto:21027619@saultcollege.ca?subject=Message%20from%20CSD120%20Website"
           >
-            Noah Strum
-          </a>
+            Noah Strum</a
+          >
         </p>
         <picture>
           <source type="image/svg+xml" srcset="images/sc-logo.svg" />
