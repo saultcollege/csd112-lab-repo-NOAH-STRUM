@@ -61,11 +61,12 @@ header {
 header nav ul {
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
 }
 
-header li {
-  display: inline;
-}
+
 
 header a {
   display: inline-block;
@@ -216,4 +217,40 @@ footer {
 [href="#top"]:hover {
   text-shadow: 2px 2px 0 rgb(255, 255, 255);
   text-decoration: none;
+}
+
+.my-fav-things label + div {
+  display: none;
+  width: 100%;
+
+  background-color: rgb(35, 35, 44);
+  box-shadow: 5px 5px rgb(12, 12, 12);
+
+  
+}
+.my-fav-things input[type = "radio"] {
+  display: none;
+}
+
+.my-fav-things input[type = "radio"]:checked+label + div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.my-fav-things {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.my-fav-things label {
+  order: -1;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.my-fav-things input[type = "radio"]:checked + label > h3 {
+  border-bottom: 5px solid rgb(88, 12, 151);
+  border-width: 3px;
 }

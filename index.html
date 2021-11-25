@@ -132,46 +132,62 @@
           </table>
         </div>
         <h2>My Favourite Things</h2>
-        <figure>
-          <a href="https://www.tesla.com/">
-            <img src="images/tesla-logo.jpg" alt="Tesla Logo" />
-          </a>
-          <figcaption>Tesla Logo</figcaption>
-        </figure>
-        <h3>Video Games</h3>
-        <ol>
-          <li>NHL 20</li>
-          <li>Grand Theft Auto 5</li>
-          <li>L.A. Noire</li>
-        </ol>
-        <h3>Haiku</h3>
-        <p>
-          Everything I touch<br />
-          with tenderness, alas,<br />
-          pricks like a bramble.<br />
-          <cite>by <span class="author">Kobayashi Issa</span></cite>
-        </p>
-        <h3>Public Domain Audiobook</h3>
-        <audio
-          src="http://www.archive.org/download/mozartsyouth_2106_librivox/mozartsyouth_02_hoffmann_64kb.mp3"
-          controls
-        >
-          <a
-            href="https://librivox.org/author/16108?primary_key=16108&search_category=author&search_page=1&search_form=get_results"
-            >Audio book Download</a
-          >
-        </audio>
-        <h3>Youtube Video</h3>
-        <div class="youtube-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ehZePNP_w4I"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+        <div class="my-fav-things" >
+          <input type="radio" name="fav-things" value="tab1" id="tab1" checked/>
+          <label for="tab1"><h3>Favourite Company</h3></label>
+          <div>
+            <figure>
+              <a href="https://www.tesla.com/">
+                <img src="images/tesla-logo.jpg" alt="Tesla Logo" />
+              </a>
+              <figcaption>Tesla Logo</figcaption>
+            </figure>
+          </div>
+          <input type="radio" name="fav-things" value="tab2" id="tab2" />
+          <label for="tab2"><h3>Video Games</h3></label>
+          <div>
+            <ol>
+              <li>NHL 20</li>
+              <li>Grand Theft Auto 5</li>
+              <li>L.A. Noire</li>
+            </ol>
+          </div>
+          <input type="radio" name="fav-things" value="tab3" id="tab3" />
+          <label for="tab3"><h3>Haiku</h3></label>
+          <div>
+            <p>
+              Everything I touch<br />
+              with tenderness, alas,<br />
+              pricks like a bramble.<br />
+              <cite>by <span class="author">Kobayashi Issa</span></cite>
+            </p>
+          </div>
+          <input type="radio" name="fav-things" value="tab4" id="tab4" />
+          <label for="tab4"><h3>Public Domain Audiobook</h3></label>
+          <div>
+            <audio
+              src="http://www.archive.org/download/mozartsyouth_2106_librivox/mozartsyouth_02_hoffmann_64kb.mp3"
+              controls
+            >
+              <a
+                href="https://librivox.org/author/16108?primary_key=16108&search_category=author&search_page=1&search_form=get_results"
+                >Audio book Download</a
+              >
+            </audio>
+          </div>
+          <input type="radio" name="fav-things" value="tab5" id="tab5" />
+          <label for="tab5"><h3>Youtube Video</h3></label>
+          <div>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/ehZePNP_w4I"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </main>
       <footer>
