@@ -66,8 +66,6 @@ header nav ul {
   justify-content: center;
 }
 
-
-
 header a {
   display: inline-block;
   color: rgb(69, 162, 158);
@@ -225,14 +223,12 @@ footer {
 
   background-color: rgb(35, 35, 44);
   box-shadow: 5px 5px rgb(12, 12, 12);
-
-  
 }
-.favourites input[type = "radio"] {
+.favourites input[type="radio"] {
   display: none;
 }
 
-.favourites input[type = "radio"]:checked+label + div {
+.favourites input[type="radio"]:checked + label + div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -242,7 +238,6 @@ footer {
 .favourites {
   display: flex;
   flex-wrap: wrap;
-
 }
 .favourites label {
   order: -1;
@@ -250,7 +245,7 @@ footer {
   margin-right: 1em;
 }
 
-.favourites input[type = "radio"]:checked + label > h3 {
+.favourites input[type="radio"]:checked + label > h3 {
   border-bottom: 5px solid rgb(88, 12, 151);
   border-width: 3px;
 }
@@ -268,7 +263,7 @@ footer {
   object-fit: cover;
 }
 
-.gallery .row-span-2{
+.gallery .row-span-2 {
   grid-row: span 2;
 }
 
@@ -278,5 +273,35 @@ footer {
 
 .gallery a:hover {
   transform: scale(1.1);
+}
 
+.paperclip {
+  background: none;
+  box-shadow: none;
+  width: 20%;
+}
+
+div[class="bio"] a {
+  display: block;
+}
+
+a {
+  position: relative;
+}
+
+a .paperclip {
+  position: absolute;
+  top: -10px;
+  right: -6px;
+}
+
+a[title="Back to top"] {
+  margin-left: -25px;
+  position: sticky;
+  bottom: 10px;
+  display: inline-block;
+}
+
+a[title="Back to top"]:hover {
+  transform: rotate(45deg);
 }
