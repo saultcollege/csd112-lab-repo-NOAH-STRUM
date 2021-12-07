@@ -320,3 +320,28 @@ a[title="Back to top"]:hover {
     grid-column: span 1;
   }
 }
+
+@media screen and (max-width: 502px) {
+  div.bio table thead, .bio table tfoot, .bio table th {
+    display: none;
+  }
+  div.bio table td {
+    display: block;
+    padding: 0 1rem 0 1rem;
+  }
+  div.bio table {
+    caption-side: top;
+  }
+  div.bio table tr td:first-of-type {
+    padding-top: 0.3em;
+    font-weight: bold;
+  }
+  div.bio table tr td:last-of-type {
+    padding-bottom: 0.3em ;
+    font-style: italic;
+    font-size: 0.8em;
+  }
+  div.bio table tr td:last-of-type::after {
+    content: "hrs/wk";
+  }
+}
