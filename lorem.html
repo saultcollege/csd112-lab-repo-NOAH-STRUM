@@ -41,6 +41,15 @@
       footer {
         clear: both;
       }
+      @media screen and (max-width: 547px) {
+        p img.lorem-image {
+          float: none;
+        }
+      }
+
+      p img.lorem-image {
+        float: right;
+      }
     </style>
     <!--Found Me!-->
   </head>
@@ -76,9 +85,9 @@
         </p>
         <p>
           <img
+            class="lorem-image"
             src="https://loremflickr.com/320/240"
             alt="placeholder image"
-            style="float: right"
           />
           Sed ullamcorper tellus et consequat tristique. Quisque nunc eros,
           pharetra id nunc sit amet, tincidunt imperdiet mauris. Fusce sodales
@@ -118,7 +127,7 @@
           <img
             src="https://loremflickr.com/cache/resized/65535_51229703259_6899d65cb2_320_240_nofilter.jpg"
             alt="placeholder image"
-            style="float: left"
+            class="lorem-image"
           />
           Integer aliquam, mauris sed viverra mattis, odio sapien pellentesque
           dolor, ut tristique risus tellus a risus. Maecenas dui mauris,
