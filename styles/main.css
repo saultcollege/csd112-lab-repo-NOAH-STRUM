@@ -197,7 +197,6 @@ div.bio table {
   -webkit-column-span: all;
 }
 
-
 img {
   max-width: 100%;
 }
@@ -247,8 +246,9 @@ footer {
 }
 
 .favourites input[type="radio"]:checked + label > h3 {
-  border-bottom: 5px solid rgb(88, 12, 151);
-  border-width: 3px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(88, 12, 151);
+  text-decoration-thickness: 3px;
 }
 
 .gallery {
@@ -272,7 +272,7 @@ footer {
   grid-column: span 2;
 }
 
-.gallery a{
+.gallery a {
   transition: ease 200ms;
 }
 
@@ -313,8 +313,6 @@ a[title="Back to top"]:hover {
   transform: rotate(45deg);
 }
 
-
-
 @media screen and (max-width: 450px) {
   .gallery .col-span-2 {
     grid-column: span 1;
@@ -322,7 +320,9 @@ a[title="Back to top"]:hover {
 }
 
 @media screen and (max-width: 502px) {
-  div.bio table thead, .bio table tfoot, .bio table th {
+  div.bio table thead,
+  .bio table tfoot,
+  .bio table th {
     display: none;
   }
   div.bio table td {
@@ -337,11 +337,20 @@ a[title="Back to top"]:hover {
     font-weight: bold;
   }
   div.bio table tr td:last-of-type {
-    padding-bottom: 0.3em ;
+    padding-bottom: 0.3em;
     font-style: italic;
     font-size: 0.8em;
   }
   div.bio table tr td:last-of-type::after {
     content: "hrs/wk";
+  }
+}
+
+@media screen and (max-width: 800px) {
+  div.favourites {
+    flex-direction: column;
+  }
+  .favourites label {
+    order: 0;
   }
 }
