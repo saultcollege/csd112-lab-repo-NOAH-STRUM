@@ -183,9 +183,9 @@ fieldset ul {
 }
 
 .bio {
-  column-count: 3;
+  column-width: 13em;
   column-gap: 2em;
-  -webkit-column-count: 3;
+  -webkit-column-width: 13em;
   -webkit-column-gap: 2em;
 }
 
@@ -196,6 +196,7 @@ div.bio table {
   caption-side: bottom;
   -webkit-column-span: all;
 }
+
 
 img {
   max-width: 100%;
@@ -252,7 +253,7 @@ footer {
 
 .gallery {
   display: grid;
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: minmax(180px, auto);
   row-gap: 10px;
   column-gap: 10px;
 }
@@ -271,6 +272,10 @@ footer {
   grid-column: span 2;
 }
 
+.gallery a{
+  transition: ease 200ms;
+}
+
 .gallery a:hover {
   transform: scale(1.1);
 }
@@ -281,8 +286,8 @@ footer {
   width: 20%;
 }
 
-div[class="bio"] a {
-  display: block;
+.bio a {
+  display: inline-block;
 }
 
 a {
@@ -300,8 +305,18 @@ a[title="Back to top"] {
   position: sticky;
   bottom: 10px;
   display: inline-block;
+
+  transition: ease 200ms;
 }
 
 a[title="Back to top"]:hover {
   transform: rotate(45deg);
+}
+
+
+
+@media screen and (max-width: 450px) {
+  .gallery .col-span-2 {
+    grid-column: span 1;
+  }
 }
