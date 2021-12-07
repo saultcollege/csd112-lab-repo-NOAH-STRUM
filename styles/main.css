@@ -253,7 +253,11 @@ footer {
 
 .gallery {
   display: grid;
+<<<<<<< HEAD
   grid-template-columns: minmax(180px, auto);
+=======
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+>>>>>>> 4e48fe898a12ded3047574a192cb41f169b260ae
   row-gap: 10px;
   column-gap: 10px;
 }
