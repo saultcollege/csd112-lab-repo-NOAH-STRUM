@@ -313,6 +313,31 @@ a[title="Back to top"]:hover {
   transform: rotate(45deg);
 }
 
+header nav input[id="menu-toggle"],
+header nav label.sandwich-icon {
+  display: none;
+}
+
+.sandwich-icon::before {
+  content: "";
+  display: block;
+  width: 40px;
+  border-top: 5px solid rgb(88, 12, 151);
+  position: absolute;
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+.sandwich-icon::after {
+  content: "";
+  display: block;
+  width: 40px;
+  border-top: 5px solid rgb(88, 12, 151);
+  position: absolute;
+  padding-top: 5px;
+  margin-top: 15px;
+}
+
 @media screen and (max-width: 450px) {
   .gallery .col-span-2 {
     grid-column: span 1;
@@ -352,5 +377,39 @@ a[title="Back to top"]:hover {
   }
   .favourites label {
     order: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header[id="top"] ul {
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden;
+    transition: ease 1000ms;
+  }
+  header[id="top"] a {
+    padding-top: 0.5em;
+    border-top: 0;
+  }
+  header[id="top"] a:hover {
+    border-top: 0;
+    text-decoration: underline;
+  }
+  #menu-toggle:checked + .sandwich-icon + ul {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header nav label.sandwich-icon {
+    display: block;
+    height: 25px;
+    width: 40px;
+    border-top: 5px solid rgb(88, 12, 151);
+    margin: 1em auto 1em auto;
+  }
+  header nav label.sandwich-icon:hover {
+    cursor: pointer;
   }
 }
