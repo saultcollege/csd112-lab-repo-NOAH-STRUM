@@ -386,19 +386,23 @@ header nav label.sandwich-icon {
     align-items: center;
     height: 0;
     overflow: hidden;
-    transition: ease 1000ms;
+    transition: ease 200ms;
   }
+
   header[id="top"] a {
     padding-top: 0.5em;
     border-top: 0;
   }
+
   header[id="top"] a:hover {
     border-top: 0;
     text-decoration: underline;
   }
+
   #menu-toggle:checked + .sandwich-icon + ul {
-    height: 200px;
+    height: 180px;
   }
+
 }
 
 @media screen and (max-width: 700px) {
@@ -408,8 +412,29 @@ header nav label.sandwich-icon {
     width: 40px;
     border-top: 5px solid rgb(88, 12, 151);
     margin: 1em auto 1em auto;
+    transition: ease 200ms;
   }
   header nav label.sandwich-icon:hover {
     cursor: pointer;
+  }
+
+  #menu-toggle:checked + .sandwich-icon {
+    padding-top: 5px;
+    border-top: none;
+  }
+
+  #menu-toggle:checked + .sandwich-icon::before {
+    margin-top: 0;
+    padding-top: 0;
+    transform: rotate(45deg);
+    transition: ease 200ms;
+  }
+
+  #menu-toggle:checked + .sandwich-icon::after {
+    transform-origin: center;
+    margin-top: 0;
+    padding-top: 0;
+    transform: rotate(-45deg);
+    transition: ease 200ms;
   }
 }
